@@ -7,16 +7,6 @@
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
       rel="stylesheet"
-    />
-    <!DOCTYPE html>
-    <html lang="en">
-      <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>MY Farm Product</title>
-        <link
-          href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
-          rel="stylesheet"
         />
         <style>
           @media (max-width: 768px) {
@@ -115,13 +105,26 @@
             align-items: center;
             gap: 10px;
             background-color: #fff;
-            padding: 2px 4px;
+            padding: 2px 10px;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            position: fixed;
+            top: 0;
+            width: 100%;
+            grid-template-columns: 1fr auto 1fr;
+            z-index: 1000;
           }
 
           header img {
             justify-self: start;
             width: 140px;
+          }
+          /*.line{
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+          }*/
+          .line :hover {
+            text-decoration: underline;
+            color: #28a745;
+            transition: all 3ms ease-in-out;
           }
           nav {
             justify-self: center;
@@ -157,6 +160,7 @@
             text-align: center;
             position: relative;
             color: white;
+            background-position-y: 10px;
           }
 
           .hero::before {
@@ -314,6 +318,7 @@
             border: 1px solid #ddd;
             margin-top: 10px;
             border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
           }
 
           .faq-details p {
@@ -378,7 +383,7 @@
         <header>
           <img src="Logo1.png" alt="MY Farm Product Logo" />
           <nav>
-            <ul>
+            <ul class="line">
               <li><a href="#">Home</a></li>
               <li><a href="#">Services</a></li>
               <li><a href="#">Marketplace</a></li>
@@ -397,7 +402,7 @@
           <div class="hero-content">
             <h1>Farmers work hard</h1>
             <p>LET'S SUPPORT THEM</p>
-            <a href="#">Buy a farm product</a>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSfJlPcIjYgycAno6JOBkr35sDT2_sb5tnOMhgLaK4xUb5v-FQ/viewform?usp=header">Buy a farm product</a>
           </div>
         </section>
 
